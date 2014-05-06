@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../js/vendor/modernizr.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>{{ title }}</h1>
+        {{ contents | safe }}
+      </div>
+    </div>
+{% endblock %}
+
+{% block foot %}
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/foundation.min.js"></script>
+{% endblock %}

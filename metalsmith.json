@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Rain Man",
+    "description": "A manual collections site"
+  },
+  "plugins": {
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-templates": {
+      "engine": "swig"
+    }
+  }
+}
