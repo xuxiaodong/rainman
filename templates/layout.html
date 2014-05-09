@@ -10,8 +10,44 @@
     {% endblock %}
   </head>
   <body>
-    {% block content %}
-    {% endblock %}
+    <div class="contain-to-grid fixed">
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                <h1><a href="">Rainman</a></h1>
+                </li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="right">
+                    <li><a href="">Linux</a></li>
+                    <li><a href="">Shell Scripting</a></li>
+                    <li><a href="">Vim</a></li>
+                    <li><a href="">Git</a></li>
+                    <li class="has-dropdown">
+                    <a href="">Programming</a>
+                    <ul class="dropdown">
+                        <li><a href="">Perl</a></li>
+                        <li><a href="">Python</a></li>
+                        <li><a href="">Ruby</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+        {% block content %}
+        {% endblock %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <p class="copyright">&copy; 2014 Rainman. Some rights reserved.</p>
+        </div>
+    </div>
     
     {% block foot %}
     <script src="js/vendor/jquery.js"></script>
